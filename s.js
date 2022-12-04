@@ -90,3 +90,8 @@ function getCookie(name) {
         ))
     return matches ? decodeURIComponent(matches[1]) : undefined
 }
+function get_cookie(name){
+    return document.cookie.split(';').some(c => {
+        return c.trim().startsWith(name + '=');
+    });
+}
