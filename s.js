@@ -52,7 +52,7 @@ function login(){
 }
 function logout(){
     console.log("wor")
-    document.cookie = "pass= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+    document.cookie = "pass=1292207802; max-age=-60";
     location.replace('https://tanushchauhan.github.io/encrypt/')
 }
 // function removecookie(sKey, sPath, sDomain) {
