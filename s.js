@@ -54,11 +54,19 @@ function logout(){
     removecookie("pass");
     location.replace('https://tanushchauhan.github.io/encrypt/')
 }
-function removecookie(sKey, sPath, sDomain) {
-    document.cookie = encodeURIComponent(sKey) + 
-                  "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + 
-                  (sDomain ? "; domain=" + sDomain : "") + 
-                  (sPath ? "; path=" + sPath : "");
+// function removecookie(sKey, sPath, sDomain) {
+//     document.cookie = encodeURIComponent(sKey) + 
+//                   "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + 
+//                   (sDomain ? "; domain=" + sDomain : "") + 
+//                   (sPath ? "; path=" + sPath : "");
+// }
+function removecookie( name, path, domain ) {
+  if( get_cookie( name ) ) {
+    document.cookie = name + "=" +
+      ((path) ? ";path="+path:"")+
+      ((domain)?";domain="+domain:"") +
+      ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+  }
 }
 function setCookie(name, value, path, options = {}) {
     options = {
