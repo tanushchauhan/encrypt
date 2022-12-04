@@ -11,13 +11,13 @@ return hash;
 }
 
 if (window.location.href.indexOf("password76") != -1){
-    if(getCookie('pass') != "1292207802") if(location.href != 'https://tanushchauhan.github.io/encrypt/index.html/') location.replace('http://127.0.0.1:5500/index.html')
+    if(getCookie('pass') != "1292207802") if(location.href != 'https://tanushchauhan.github.io/encrypt/') location.replace('https://tanushchauhan.github.io/encrypt/')
 
 }
 else if (window.location.href.indexOf("index") != -1){
     if(getCookie('pass') == "1292207802"){
 
-    if(location.href != 'https://tanushchauhan.github.io/encrypt/home.html/') location.replace('http://127.0.0.1:5500/home.html')
+    if(location.href != 'https://tanushchauhan.github.io/encrypt/home.html') location.replace('https://tanushchauhan.github.io/encrypt/home.html')
     }
     else{
     var b=document.getElementById('email').value;
@@ -52,7 +52,7 @@ function login(){
 }
 function logout(){
     removecookie("pass");
-    location.replace('http://127.0.0.1:5500/index.html')
+    location.replace('https://tanushchauhan.github.io/encrypt/')
 }
 function removecookie(sKey, sPath, sDomain) {
     document.cookie = encodeURIComponent(sKey) + 
