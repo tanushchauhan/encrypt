@@ -10,11 +10,11 @@ String.prototype.hashCode = function() {
 return hash;
 }
 
-if (window.location.href.indexOf("password76") != -1){
+if (window.location.href.indexOf("home") != -1){
     if(getCookie('pass') != "1292207802") if(location.href != 'https://tanushchauhan.github.io/encrypt/') location.replace('https://tanushchauhan.github.io/encrypt/')
 
 }
-else if (window.location.href.indexOf("index") != -1){
+else if (window.location.href.indexOf("encrypt") != -1){
     if(getCookie('pass') == "1292207802"){
 
     if(location.href != 'https://tanushchauhan.github.io/encrypt/home.html') location.replace('https://tanushchauhan.github.io/encrypt/home.html')
