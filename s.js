@@ -51,6 +51,7 @@ function login(){
       }
 }
 function logout(){
+    console.log("wor")
     removecookie("pass");
     location.replace('https://tanushchauhan.github.io/encrypt/')
 }
