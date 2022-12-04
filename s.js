@@ -60,7 +60,7 @@ function logout(){
 //                   "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + 
 //                   (sDomain ? "; domain=" + sDomain : "") + 
 //                   (sPath ? "; path=" + sPath : "");
-}
+// }
 // function removecookie( name, path, domain ) {
 //   if( get_cookie( name ) ) {
 //     document.cookie = name + "=" +
